@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="top center">
@@ -42,6 +43,16 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="seasons center">
+        <div class="seasonsgeneral">
+            <h2 class="seasons_title">Времена года!</h2>
+            <p class="seasons_subtitle">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
+            <div class="ssns_btn">
+                <button class="seasons_button" onclick="printSeason(prompt('Введите число от 1 до 12'));">Играть!</button>
+            </div>
+        </div>
+        <img src="img/seasons.svg" alt="" class="seasons_img">
     </div>
 </body>
 </html>

@@ -43,4 +43,34 @@
     .bl {
         left: 16px;
     }
+    .seasons {
+        height: 652px;
+        background: #000915;
+        &_title {
+            padding-top: 50px;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+        &_subtitle {
+            width: 344px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        &_img {
+            margin-top: 0px;
+            width: 344px;
+            height: 236px;
+        }
+        display: flex; 
+        flex-direction: column;  
+        gap: 64px;
+    }
+    .ssns_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
