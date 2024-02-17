@@ -1,3 +1,4 @@
+"use strict";
 //задание 1
 
 const printNumber = (a, b) => {
@@ -15,7 +16,7 @@ console.log(printNumber(4,8));
 //задание 2
 
 const printEven = (a) => {
-    if (a % 2 == 0) {
+    if (a % 2 === 0) {
         return 'Число четное';
     } else {
         return 'Число нечетное';
@@ -56,6 +57,9 @@ helloFriend();
 //задание 5
 
 const checkNumbers = (a, b) => {
+    if ((a !== null &&  a.trim().length === 0) || (b !== null &&  b.trim().length === 0)) {
+        console.log('Одно или оба значения не являются числом');
+    }
     let c = Number(a);
     let d = Number(b);
     let checkA = isNaN(c);
@@ -72,14 +76,21 @@ checkNumbers(check1 = prompt('Введите первое число'), check2 =
 //задание 6
 
 const cubeNumber = (a) => {
-    let b = Number(a);
-    let checkA = isNaN(b);
-    if (!checkA) {
-        let cube = b**3;
-        console.log(`${b} в кубе равняется ${cube}`);
-    } else {
+    if (a !== null &&  a.trim().length === 0) {
         console.log('Переданный параметр не является числом');
+    } 
+    else {
+        let b = Number(a);
+        let checkA = isNaN(b);
+        if (!checkA) {
+            let cube = b**3;
+            console.log(`${b} в кубе равняется ${cube}`);
+        } 
+        else {
+            console.log('Переданный параметр не является числом');
+        }
     }
+   
 }
 
 cubeNumber(a = prompt('Введите число'));
