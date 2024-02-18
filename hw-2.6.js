@@ -21,12 +21,13 @@ arraythird.join(' ');
 
 //задание 4
 
-const result = []
+const resultt = [];
+const someArr = [];
 for (let i = 0; i < 3; i++) {
-  const someArr = [1, 1, 1]
-  result.push(someArr);
+    someArr.push(1);
+    resultt.push(someArr);
 }
-console.log(result);
+console.log(resultt);
 
 //задание 5
 
@@ -63,7 +64,7 @@ console.log(arrayeight.join(''));
 //задание 9
 
 let arrnine = [[1, 2, 3,],[4, 5, 6]];
-console.log(arrnine.join());
+console.log(arrnine.flat());
 
 //задание 10
 
