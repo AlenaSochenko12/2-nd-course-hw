@@ -9,5 +9,7 @@ const printSeason = (a) => {
         console.log('Осень');
     } else if (a < 1 || a > 12) {
         console.log('Введенное число не может быть номером месяца');
+    } else {
+        console.log('Формат ввода неверный');
     }
 }
