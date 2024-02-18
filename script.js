@@ -15,7 +15,8 @@ const printSeason = (a) => {
 const printWords = () => {
     let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     list = list.sort(() => Math.random() - 0.5);
-    alert(list);
+    
+    alert(list.map(x => " " + x));
 
     let question = prompt('Чему равнялся первый элемент массива?');
     let question2 = prompt('Чему равнялся последний элемент массива?');
