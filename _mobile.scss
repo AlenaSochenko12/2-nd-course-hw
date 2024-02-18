@@ -70,4 +70,35 @@
         justify-content: center;
         align-items: center;
     }
+    .words {
+        height: 652px;
+        background: #000915;
+        &_title {
+            padding-top: 50px;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+        &_subtitle {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        &_img {
+            margin-top: 0px;
+            width: 344px;
+            height: 231px;
+        }
+        display: flex; 
+        flex-direction: column-reverse; 
+        justify-content: flex-end; 
+        gap: 64px;
+    }
+    .wrds_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
